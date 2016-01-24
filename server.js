@@ -8,7 +8,7 @@ var middleware = require('./middleware');
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthentication, function(req, res){
-	res.send('Hellp from about page!');
+	res.send('Hellp from about page! 3');
 });
 
 app.use(express.static(__dirname + "/public"));
